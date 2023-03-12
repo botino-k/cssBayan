@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+.accordion-item {
+  border-bottom: 0.1rem solid #ddd;
+}
+
+.accordion-header {
+  background-color: #f7f7f7;
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.accordion-content {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.2s ease-out;
+}
+
+.accordion-item:hover .accordion-content {
+  height: 10rem;
+
+}
