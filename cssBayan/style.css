@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 0 calc(20px - (100vw - 100%)) 0 0; 
+}
+
+img {
+  display: block;
+  height: 100%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.accordion-item {
+  border-bottom: 0.1rem solid #ddd;
+}
+
+.accordion-header-wrapper {
+  background-color: #f7f7f7;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordion-header {
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.accordion-content {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.4s ease-out; 
+}
+
+.accordion-item:hover .accordion-content {
+  height: 30rem;
+}
+
+.accordion-item:hover .accordion-content {
+  height: 30rem;
+}
+
+.accordion:hover .accordion-header-icon {
+  background-image: url('./img/plus-alt-svgrepo-com.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+}
+
+.accordion-item:hover .accordion-header-icon {
+  background-image: url('./img/close-svgrepo-com.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+}
+
+.accordion-img {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin-top: 15%;
+}
+
+@media (max-width: 320px) {
+  body { font-size: 0.6rem; }
+}
+@media (min-width: 820px) {
+  body { font-size: 0.8rem; }
+}
+@media (min-width: 1200px) {
+  body { font-size: 1rem; }
+}
