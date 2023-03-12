@@ -38,7 +38,7 @@ img {
 .accordion-content {
   height: 0;
   overflow: hidden;
-  transition: height 0.2s ease-out; 
+  transition: height 0.4s ease-out; 
 }
 
 .accordion-item:hover .accordion-content {
@@ -74,4 +74,14 @@ img {
 
 .container {
   margin-top: 15%;
+}
+
+@media (max-width: 320px) {
+  body { font-size: 0.6rem; }
+}
+@media (min-width: 820px) {
+  body { font-size: 0.8rem; }
+}
+@media (min-width: 1200px) {
+  body { font-size: 1rem; }
 }
